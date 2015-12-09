@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var boomLabel: UIImageView!
+    
+    @IBOutlet weak var coolMeButton: UIButton!
+    
+    @IBOutlet weak var backgroundLabel: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +27,13 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func coolMeButton(sender: AnyObject) {
+        
+        backgroundLabel.hidden = false
+        boomLabel.hidden = false
+        coolMeButton.hidden = true
+        
+        
+    }
 }
 
