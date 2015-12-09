@@ -27,13 +27,12 @@ class ViewController: UIViewController {
     }
 
 
-    @IBAction func coolMeButton(sender: AnyObject) {
+    @IBAction func coolMeButtonClick(sender: AnyObject) {
         
         backgroundLabel.hidden = false
         boomLabel.hidden = false
         coolMeButton.hidden = true
-        
-        
+    
     }
 }
 
